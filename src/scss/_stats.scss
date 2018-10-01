@@ -1,0 +1,45 @@
+.stats {
+  display: none;
+  @media only screen and (min-width: 600px) {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    }
+    &__amount {
+      padding-bottom: 30px;
+      width: 20%;
+      @media only screen and (min-width: 700px) {
+        width: 25%;
+        }
+      @media only screen and (min-width: 1000px) {
+        border-right: 2px solid rgba(255,255,255,.2);
+        }
+      &:last-child {
+        border-right: none;
+      }
+      &__title {
+        font-size: 12px;
+        font-weight: 700;
+        text-align: center;
+        @media only screen and (min-width: 480px) {
+          font-size: 16px;
+          }
+          @media only screen and (min-width: 900px) {
+            font-size: 18px;
+            }
+      }
+      h5 {
+        font-size: 26px;
+        color: #fff;
+        text-align: center;
+        @media only screen and (min-width: 480px) {
+          font-size: 32px;
+          }
+          @media only screen and (min-width: 900px) {
+            font-size: 52px;
+            }
+      }
+    }
+}

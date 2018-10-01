@@ -1,0 +1,58 @@
+#products {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+}
+
+#products td, #products th {
+    border: 1px solid #ddd;
+    padding: 4px;
+    text-align: center;
+}
+
+#products tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#products tr:hover {
+  background-color: #ddd;
+}
+
+#products th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #52ad34;
+    color: white;
+}
+
+.circle {
+	width: 11px;
+	height: 11px;
+	background-color: #52ad34;
+	border-radius: 100%;
+  margin: 0 auto;
+  @media only screen and (min-width: 600px) {
+    height: 16px;
+    width: 16px;
+  }
+}
+
+.table-mobile {
+  @media only screen and (min-width: 800px) {
+    display: none;
+  }
+}
+
+.table-desktop {
+  display: none;
+  @media only screen and (min-width: 800px) {
+    display: block;
+  }
+}
+
+.sticky {
+  position: sticky;
+  width: 100%;
+  top: 70px;
+}

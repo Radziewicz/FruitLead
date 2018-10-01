@@ -1,0 +1,37 @@
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  &--modifier {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+.container-contact {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+.background-top {
+  background: url("../img/3.jpg") 0 0 no-repeat;
+  background:  0 0 no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.background-contact {
+  background: url("../img/szklarnia salaty.jpg") 0 0 no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}

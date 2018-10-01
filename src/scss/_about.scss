@@ -1,0 +1,39 @@
+.about {
+  padding: 20px 5%;
+  background-color: #52ad34;
+  color: #000;
+    @media only screen and (min-width: 1000px) {
+      padding: 40px 0;
+      }
+    &__inner {
+      @media only screen and (min-width: 1000px) {
+        padding: 50px 0;
+        }
+      .header__title--about {
+        color: #fff;
+        font-size: 26px;
+        @media only screen and (min-width: 650px) {
+          font-size: 54px;
+        }
+      }
+      h6 {
+        font-size: 12px;
+        padding-bottom: 0;
+        @media only screen and (min-width: 650px) {
+          font-size: 14px;
+        }
+      }
+      &__description {
+        font-size: 14px;
+        line-height: 1.5;
+        padding-bottom: 30px;
+        max-width: 1200px;
+        @media only screen and (min-width: 650px) {
+          font-size: 18px;
+        }
+        @media only screen and (min-width: 1000px) {
+          font-size: 20px;
+        }
+      }
+    }
+}

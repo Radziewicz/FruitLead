@@ -1,0 +1,107 @@
+   .hero {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      width: 100%;
+      @media only screen and (min-width: 600px) {
+        top: 60%;
+        }
+      &__element {
+        display: flex;
+        flex-direction: column;
+        @media only screen and (min-width: 600px) {
+          flex-direction: row;
+          }
+        &__title {
+          color: #000;
+          font-size: 70px;
+          font-family: 'Tangerine', cursive;
+          font-weight: 700;
+          padding: 30px 5% 0 5%;
+          line-height: normal;
+          @media only screen and (min-width: 600px) {
+            font-size: 90px;
+            width: 90%;
+            padding: 0 0 100px 0;
+            }
+            @media only screen and (min-width: 1000px) {
+              font-size: 140px;
+              width: 90%;
+              padding: 0 0 100px 0;
+              }
+          }
+          &__icons {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            padding-top: 100px;
+            padding-right: 5%;
+            @media only screen and (min-width: 600px) {
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-end;
+              padding: 0;
+              }
+            &__item {
+              @media only screen and (min-width: 600px) {
+                padding-right: 0;
+                padding-bottom: 30px;
+                }
+              img {
+                padding-left: 20px;
+                @media only screen and (min-width: 600px) {
+                  padding-left: 60px;
+                  }
+              }
+            }
+          }
+        }
+      }
+
+      .paralasic {
+        background: url("../img/3.jpg");
+        height: 100vh;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+      }
+
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        &--certificate {
+          margin-top: -5px;
+        }
+        &--calendar {
+          margin-top: -10px;
+        }
+        &--globe {
+          margin-top: -10px;
+        }
+    }
+
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 220px;
+        background-color: transparent;
+        color: #52ad34;
+        font-weight: bold;
+        position: absolute;
+        z-index: 1;
+        right: 40%;
+        opacity: 0;
+        transition: opacity 0.3s;
+        text-align: center;
+    }
+
+    .tooltip:hover .tooltiptext {
+        visibility: hidden;
+        opacity: 1;
+        @media only screen and (min-width: 800px) {
+          visibility: visible;
+          opacity: 1;
+          }
+    }

@@ -1,0 +1,125 @@
+.subpage {
+  padding-top: 100px;
+  padding-bottom: 40px;
+  font-size: 12px;
+  @media only screen and (min-width: 700px) {
+    font-size: 18px;
+  }
+  &__description {
+    line-height: 2;
+    padding: 20px 0 30px 5%;
+    @media only screen and (min-width: 1200px) {
+      padding-left: 0;
+    }
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.dusky {
+  background-color: #e6e6e6;
+}
+
+footer {
+  background-color: #000;
+  padding: 20px 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 12px;
+  text-align: center;
+  padding: 10px 5% 0 5%;
+  @media only screen and (min-width: 600px) {
+    flex-direction: row;
+  }
+  @media only screen and (min-width: 800px) {
+    font-size: 14px;
+  }
+  &__element {
+  }
+  h5 {
+    color: #52ad34;
+    padding-bottom: 15px;
+  }
+  p {
+    color: #4f4f4f;
+    padding-bottom: 15px;
+  }
+  a {
+    text-decoration: none;
+    color: #4f4f4f;
+    font-weight: 400;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    &:hover {
+      color: #52ad34;
+      transition: 0.3s;
+    }
+  }
+}
+
+.certificate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
+  padding-left: 5%;
+  @media only screen and (min-width: 600px) {
+    flex-direction: row;
+    padding-left: 0;
+  }
+  &__logo {
+    padding-left: 10%;
+    @media only screen and (min-width: 600px) {
+      padding-left: 0;
+    }
+    img {
+      width: 200px;
+      height: auto;
+      padding-left: 5%;
+      padding-right: 30px;
+      padding-bottom: 30px;
+      @media only screen and (min-width: 600px) {
+        padding-bottom: 0;
+      }
+    }
+  }
+  &__description {
+      padding-bottom: 0;
+    p {
+      padding-bottom: 20px;
+      font-size: 12px;
+      @media only screen and (min-width: 800px) {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.certificate-info {
+  padding-bottom: 60px;
+  text-align: center;
+  font-size: 12px;
+  padding-left: 5%;
+  padding-right: 20px;
+  line-height: 2;
+    @media only screen and (min-width: 700px) {
+      font-size: 14px;
+      padding-left: 0;
+    }
+}
+
+.bananas {
+
+  img {
+    max-height: 400px;
+    padding: 60px 0;
+  }
+}
